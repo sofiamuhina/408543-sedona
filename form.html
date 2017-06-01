@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+      <header class="page-header">
+          <h1 class="page-header__title">Welcome to the gorgeous Sedona</h1> <!--наверное будет скрыто-->
+          <nav class="main-nav">
+              <ul class="main-nav__list">
+                  <li class="main-nav__item">Главная</li>
+                  <li class="main-nav__item">Фото и видео</li>
+                  <li class="main-nav__item">Форма отзыва</li>
+                  <li class="main-nav__item">HTML Academy</li>
+              </ul>
+          </nav>
+          <div class="page-header__logo"></div>
+          <div class="page-header__image">
+              <img src="img/back-mobile.jpg" width="320" height="159" alt="Седона">
+          </div>
+      </header>
+      <main class="page-main">
+          <div class="content-block">
+              <span class="content-block__title">Оставьте свой отзыв</span>
+              <p class="content-block__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+          <form class="page-main__comment" action="#" method="get">
+              <div class="page-main__comment-name">
+                  <span class="subtitle">Представьтесь:</span>
+                  <div class="input-wrapper">
+                      <input class="input-wrapper__input" id="text1" type="text" placeholder="Петр">
+                      <label class="input-wrapper__text" for="text1">Имя*:</label>
+                  </div>
+                  <div class="input-wrapper">
+                      <input class="input-wrapper__input" id="text2" type="text" placeholder="Иванов">
+                      <label class="input-wrapper__text" for="text2">Фамилия*:</label>
+                  </div>
+                  <div class="input-wrapper">
+                      <input class="input-wrapper__input" id="text3" type="text" placeholder="Александрович">
+                      <label class="input-wrapper__text" for="text3">Отчество:</label>
+                  </div>
+              </div>
+              <div class="page-main__comment-contacts">
+                  <span class="subtitle">Контактная информация:</span>
+                  <div class="input-wrapper input-wrapper--contacts">
+                      <input class="input-wrapper__input input-wrapper__input--contacts" id="text4" type="text" placeholder="Введите телефон">
+                      <label class="input-wrapper__text input--wrapper__text--contacts" for="text4">Контактный телефон*:</label>
+                  </div>
+                  <div class="input-wrapper input-wrapper--contacts">
+                      <input class="input-wrapper__input input-wrapper__input--contacts" id="text5" type="text" placeholder="Введите e-mail">
+                      <label class="input-wrapper__text input-wrapper__text--contacts" for="text5">Электронная почта*:</label>
+                  </div>
+              </div>
+              <div class="page-main__comment-impress">
+                  <span class="subtitle">Ваше Общее впечатление:</span>
+                  <div class="input-wrapper input-wrapper--radio">
+                      <input class="input-wrapper__input input-wrapper__input--radio" id="radio1" type="radio" name="impress">
+                      <label class="input-wrapper__radio" for="radio1">Скорее положительное</label>
+                  </div>
+                  <div class="input-wrapper input-wrapper--radio">
+                      <input class="input-wrapper__input input-wrapper__input--radio" id="radio2" type="radio" name="impress">
+                      <label class="input-wrapper__radio" for="radio2">Скорее отрицательное</label>
+                  </div>
+                  <div class="input-wrapper input-wrapper--radio">
+                      <input class="input-wrapper__input input-wrapper__input--radio" id="radio3" type="radio" name="impress">
+                      <label class="input-wrapper__radio" for="radio3">Затрудняюсь ответить</label>
+                  </div>
+              </div>
+              <div class="page-main__comment-visited">
+                  <span class="subtitle">Посещенные достопримечательности:</span>
+                  <div class="input-wrapper input-wrapper--checkbox">
+                      <input class="input-wrapper__input input-wrapper__input--checkbox" id="check1" type="text">
+                      <label class="input-wrapper__checkbox" for="check1">Мост Дьявола</label>
+                  </div>
+                  <div class="input-wrapper input-wrapper--checkbox">
+                      <input class="input-wrapper__input input-wrapper__input--checkbox" id="check2" type="text">
+                      <label class="input-wrapper__checkbox" for="check2">Слайд-парк</label>
+                  </div>
+                  <div class="input-wrapper input-wrapper--checkbox">
+                      <input class="input-wrapper__input input-wrapper__input--checkbox" id="check3" type="text">
+                      <label class="input-wrapper__checkbox" for="check3">Гора-Колокол</label>
+                  </div>
+                  <div class="input-wrapper input-wrapper--checkbox">
+                      <input class="input-wrapper__input input-wrapper__input--checkbox" id="check4" type="text">
+                      <label class="input-wrapper__checkbox" for="check4">Красные скалы</label>
+                  </div>
+              </div>
+              <div class="page-main__comment-details">
+                  <span class="subtitle">Опишите свои эмоции:</span>
+                  <div class="input-wrapper input-wrapper--taxtarea">
+                      <textarea class="input-wrapper__input input-wrapper__input--textarea" id="textarea1" placeholder="Опишите подробно все свои восторги"></textarea>
+                      <label class="input-wrapper__textarea" for="textarea1"></label>
+                  </div>
+              </div>
+              <button type="submit">Отправить отзыв</button>
+          </form>
+      </main>
+      <footer class="page-footer">
+          <span class="page-footer__hashtag">#visitSEDONA</span>
+          <div class="page-footer__social">
+              <a class="btn btn--tw" href="#">Twitter</a>
+              <a class="btn btn--fb" href="#">Facebook</a>
+              <a class="btn btn--yt" href="#">Youtube</a>
+          </div>
+          <span class="page-footer__copyright">Разработано</span>
+      </footer>
+  </body>
+</html>
