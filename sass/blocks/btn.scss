@@ -1,0 +1,23 @@
+.btn {
+    @include text-bold();
+    position: relative;
+    color: #fff;
+    background-color: $color-btn;
+    text-align: center;
+    width: 46px;
+    height: 48px;
+    border: none;
+    &--big {
+        position: absolute;
+        bottom: 48px;
+        font-size: 21px;
+        padding: 16px 0;
+        height: 58px;
+        box-sizing: border-box;
+        @include center(280px);
+    }
+}
+
+.btn_text {
+   @include visually-hidden;
+}

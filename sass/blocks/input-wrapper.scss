@@ -1,0 +1,61 @@
+.input-wrapper {
+    margin-top: 34px;
+    margin-bottom: -10px;
+    height: 58px;
+    &--contacts {
+        margin-top: 18px;
+        margin-bottom: 0;
+        height: 87px;
+    }
+    &--radio {
+        height: 56px;
+        margin-top: 34px;
+        margin-bottom: -20px;
+    }
+    &--checkbox {
+        margin-top: 30px;
+        margin-bottom: -8px;
+    }
+}
+.input-wrapper__text {
+    @include text-light();
+    line-height: 26px;
+    &--contacts {
+        padding-left: 20px;
+    }
+}
+
+.input-wrapper__input {
+    background-color: #f2f2f2;
+    float: right;
+    border: none;
+    height: 56px;
+    margin-top: -17px;
+    &--contacts {
+        width: 100%;
+        margin-top: 8px;
+    }
+    &--radio {
+        margin-top: 0;
+        float: left;
+    }
+    %--checkbox {
+        float: left;
+    }
+    &--textarea {
+        width: 100%;
+        height: 158px;
+    }
+}
+
+.input-wrapper__radio {
+    @include text-bold();
+    text-transform: capitalize;
+    margin-left: 57px;
+}
+
+.input-wrapper__checkbox {
+    @include text-bold();
+    text-transform: capitalize;
+    margin-left: 77px;
+}

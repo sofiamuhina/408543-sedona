@@ -1,0 +1,20 @@
+@import "../mixins.scss";
+
+.main-nav {
+    height: 223px;
+}
+
+.main-nav__item {
+    background-color: $color-btn;
+    height: 56px;
+    width: $width-mobile;
+    @include text-bold(); 
+    color: #fff;
+    text-align: center;
+    padding: 16px 0 0 0;
+    box-sizing: border-box;
+}
+
+.main-nav__list {
+    @include style-list; 
+}

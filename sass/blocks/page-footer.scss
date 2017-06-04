@@ -1,0 +1,29 @@
+.page-footer {
+    position: relative;
+    height: 243px;
+    width: $width-mobile;
+}
+.page-footer__hashtag {
+    @include text-bold();
+    font-size: 21px;
+    width: 136px;
+    margin: auto;
+    margin-top: 29px;
+    display: block;
+}
+
+.page-footer__social {
+    width: 151px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.page-footer__copyright {
+    display: block;
+    width: 90px;
+    margin: auto;
+    margin-top: 43px;
+    @include text-light();
+}

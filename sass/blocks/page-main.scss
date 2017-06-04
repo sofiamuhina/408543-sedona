@@ -1,0 +1,108 @@
+.page-main {
+    width: $width-mobile;
+}
+
+.page-main__list {
+    @include style-list; 
+}
+
+.page-main__item {
+    background-color: #eeeeee;
+    &--advance {
+        background-color: #fff;
+    }
+    &--simple {
+        height: 166px;
+    }
+}
+
+.page-main__hotel {
+    position: relative;
+    height: 296px;
+    margin-top: -25px;
+}
+
+.page-main__city {
+    height: 412px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 30px 20px 70px;
+    box-sizing: border-box;
+}
+
+.page-main__subtitle {
+    @include text-bold();
+    text-align: center;
+    display: block;
+}
+
+.page-main__block {
+    margin-top: 0;
+    padding: 18px 20px 30px 20px;
+    box-sizing: border-box;
+    &--name {
+        height: 306px;
+    }
+    &--contacts {
+        height: 287px;
+    }
+    &--impress {
+        height: 289px;
+    }
+    &--visited {
+        height: 409px;
+    }
+    &--details {
+        height: 222px;
+    }
+}
+
+.page-main__comment {
+    position: relative;
+    height: 1668px;
+    margin-bottom: -4px; 
+}
+.page-main__gallery {
+    margin-top: -14px;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.page-main__gallery-photo {
+    height: 392px;
+    box-sizing: border-box;
+    margin-top: 23px;
+}
+
+.page-main__gallery-title {
+    @include text-bold();
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-top: 10px;
+}
+
+.page-main__gallery-desc {
+    display: block;
+    @include text-light();
+    text-transform: capitalize;
+}
+
+.page-main__gallery-likes {
+    @include text-bold();
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-top: 10px;
+}
+
+.page-main__gallery-video {
+    height: 510px;
+    margin-top: -5px;
+}
+
+.page-main__video {
+    margin-left: -20px;
+    margin-top: -8px;
+}
