@@ -27,10 +27,37 @@
         transform: scale(0.6, 0.6);
         background: transparent url(../../img/text-sedona-index.svg) no-repeat;
     }
+    & img {
+        width: $width-mobile;
+        height: 158px;
+    }
+    &--index img {
+        height: 389px;
+    }
 }
 
 .page-header__logo {
     background: no-repeat;
     z-index: 2;
     @include center(102px);
+}
+
+@media (min-width: 768px) {
+    .page-header {
+        width: $width-tablet;
+        height: 738px;
+    }
+    .page-header__logo {
+        top: 0;
+    }
+    .page-header__image {
+        margin-top: 0;
+        & img {
+            width: $width-tablet;
+            height: 290px;
+        }
+        &--index img {
+            height: 518px;
+        }
+    }
 }

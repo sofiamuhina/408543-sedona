@@ -1,14 +1,19 @@
 .page-footer {
     position: relative;
-    height: 243px;
+    padding: 28px 0 23px 0;
+    height: 236px;
+    box-sizing: border-box;
     width: $width-mobile;
+    &--photo {
+        padding: 74px 0 23px 0;
+        height: 282px;
+    }
 }
 .page-footer__hashtag {
     @include text-bold();
     font-size: 21px;
     width: 136px;
     margin: auto;
-    margin-top: 29px;
     display: block;
 }
 

@@ -18,3 +18,18 @@
 .main-nav__list {
     @include style-list;
 }
+
+
+@media (min-width: 768px) {
+    .main-nav {
+        height: 57px;
+        width: 100%;
+    }
+    .main-nav__item {
+        background-color: #fff;
+        color: #000;
+    }
+    .main-nav__list {
+        display: flex;
+    }
+}

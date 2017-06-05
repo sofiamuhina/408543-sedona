@@ -1,29 +1,27 @@
 .content-block {
     text-align: center;
-    height: 204px;
     box-sizing: border-box;
-    padding-top: 38px;
+    min-height: 116px;
+    padding: 38px 20px 14px 20px;
     &--index {
-        padding-top: 41px;
-        height: 224px;
-    }
+        padding: 41px 20px 11px 20px;
+    } 
     &--list {
+        min-height: 62px;
+        margin-bottom: 15px;
         text-align: left;
         list-style: none;
-        height: auto;
-        padding-top: 0;
+        padding: 0;
     }
     &--advance {
         background-color: $color-btn;
-        height: 192px;
-        padding: 40px 0 5px 0;
+        padding: 40px 20px 26px 20px;
     }
     &--simple {
-        height: 166px;
-        padding: 24px 0 0 0;
+        padding: 0;
     }
     &--hotel {
-        height: 224px;
+        padding: 0;
     }
 }
 
@@ -41,7 +39,8 @@
 
 .content-block__desc {
     @include text-light();
-    margin-top: 28px;
+    margin-top: 26px;
+    box-sizing: border-box;
     position: relative;
     &--index {
         line-height: 26px;
@@ -68,4 +67,11 @@
     position: absolute;
     top: -36px;
     @include center(60px);
+}
+
+@media (min-width: 768px) {
+    .content-block {
+        height: 204px;
+        padding-top: 38px;
+    }
 }

@@ -4,6 +4,7 @@
 
 .page-main__list {
     @include style-list;
+    margin-top: 17px;
 }
 
 .page-main__item {
@@ -12,22 +13,24 @@
         background-color: #fff;
     }
     &--simple {
-        height: 166px;
+        min-height: 145px;
+        box-sizing: border-box;
+        padding: 22px 20px 8px 20px;
+        margin-bottom: 8px;
     }
 }
 
 .page-main__hotel {
     position: relative;
-    height: 296px;
-    margin-top: -25px;
+    min-height: 244px;
+    padding: 15px 20px 0 20px;
 }
 
 .page-main__city {
-    height: 412px;
+    min-height: 305px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 30px 30px 20px 70px;
+    padding: 32px 30px 8px 70px;
     box-sizing: border-box;
 }
 
@@ -54,18 +57,17 @@
         height: 409px;
     }
     &--details {
-        height: 222px;
+        height: 378px;
+        position: relative;
     }
 }
 
 .page-main__comment {
-    position: relative;
-    height: 1668px;
+    margin-top: -10px;
     margin-bottom: -4px;
 }
 .page-main__gallery {
-    margin-top: -14px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 20px; 
     box-sizing: border-box;
 }
 
@@ -98,11 +100,19 @@
 }
 
 .page-main__gallery-video {
-    height: 510px;
+    min-height: 415px;
     margin-top: -5px;
+    padding-bottom: 63px;
+    box-sizing: border-box;
 }
 
 .page-main__video {
+    margin-top: 7px;
     margin-left: -20px;
-    margin-top: -8px;
+}
+
+@media (min-width: 768px) {
+    .page-main {
+    width: $width-tablet;
+    }
 }
