@@ -7,22 +7,23 @@
     width: 46px;
     height: 48px;
     border: none;
-    &--hostel {
-        margin: 21px 20px 50px 20px;
+    display: block;
+    &--hotel {
+        margin: 35px 0 50px 0;
         font-size: 21px;
         padding: 16px 0;
         height: 58px;
         box-sizing: border-box;
-        @include center(280px);
+        width: 280px;
     }
     &--form {
-        position: absolute;
-        bottom: 49px;
+        display: inline-block;
+        margin: 47px 0 20px 0;
         font-size: 21px;
         padding: 16px 0;
         height: 58px;
         box-sizing: border-box;
-        @include center(280px);
+        width: 280px;
     }
 }
 

@@ -45,7 +45,10 @@
 @media (min-width: 768px) {
     .page-header {
         width: $width-tablet;
-        height: 738px;
+        height: 346px;
+        &--index {
+            height: 574px;
+        }
     }
     .page-header__logo {
         top: 0;

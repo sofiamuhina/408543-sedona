@@ -71,7 +71,17 @@
 
 @media (min-width: 768px) {
     .content-block {
-        height: 204px;
-        padding-top: 38px;
+        min-height: 175px;
+        background-color: cornflowerblue;
+        padding: 75px 100px 33px 100px;
+    }
+    .content-block__title {
+        font-size: 30px;
+        &--index {
+            font-size: 21px;
+        }
+    }
+    .content-block__desc {
+        margin-top: 29px;
     }
 }

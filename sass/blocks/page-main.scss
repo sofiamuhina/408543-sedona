@@ -22,7 +22,8 @@
 
 .page-main__hotel {
     position: relative;
-    min-height: 244px;
+    box-sizing: border-box;
+    min-height: 180px;
     padding: 15px 20px 0 20px;
 }
 
@@ -58,7 +59,7 @@
     }
     &--details {
         height: 378px;
-        position: relative;
+       
     }
 }
 
@@ -114,5 +115,40 @@
 @media (min-width: 768px) {
     .page-main {
     width: $width-tablet;
+    }
+    .page-main__gallery {
+        padding: 0 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-main__gallery-photo {
+        position: relative;
+        height: 348px;
+        margin: 0;
+        width: 324px;
+        &--first {
+            height: 480px;
+            margin-top: 23px;
+            width: 648px;
+        }
+    }
+    .page-main__gallery-img {
+        & img {
+            width: 324px;
+            height: 267px;
+        }
+        &--first img {
+            width: 648px;
+            height: 400px;
+        }
+    }
+    .page-main__gallery-title,
+    .page-main__gallery-desc {
+        margin-left: 20px;
+    }
+    .page-main__gallery-likes {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
     }
 }
