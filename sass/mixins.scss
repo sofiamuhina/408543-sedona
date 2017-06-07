@@ -1,0 +1,38 @@
+@mixin style-list() {
+    padding-left: 0;
+    list-style: none;
+}
+
+@mixin text-bold() {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 26px;
+}
+
+@mixin text-light() {
+    font-family: "PT Sans";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    line-height: 24px;
+}
+
+@mixin visually-hidden() {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+@mixin center($width) {
+    position: absolute;
+    width: $width;
+    left: 50%;
+    margin-left: -($width/2);
+}
