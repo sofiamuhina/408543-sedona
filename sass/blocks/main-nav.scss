@@ -37,3 +37,9 @@
         display: flex;
     }
 }
+
+@media (min-width: 1280px) {
+    .main-nav__item:nth-child(2) {
+        margin-right: 242px;
+    }
+}

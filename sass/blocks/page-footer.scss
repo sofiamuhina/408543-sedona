@@ -32,3 +32,47 @@
     margin-top: 43px;
     @include text-light();
 }
+
+@media (min-width: 768px) {
+    .page-footer {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: $width-tablet;
+        height: 120px;
+        margin: 42px 0 0 0;
+        &--index {
+            margin: -9px 0 0 0;
+        }
+        &--photo {
+            margin: 0;
+        }
+    }
+    .page-footer__hashtag {
+        margin-left: 60px;
+    }
+    .page-footer__social {
+        margin-left: 52px;
+    }
+    .page-footer__copyright {
+        margin-top: 47px;
+        margin-right: 100px;
+    }
+}
+@media (min-width: 1200px) {
+    .page-footer {
+        width: $width-page-desk;
+        &--photo {
+            margin: 42px 0 0 0;
+        }
+    }
+    .page-footer__hashtag {
+        margin-left: 170px;
+    }
+    .page-footer__copyright {
+        margin-right: 40px;
+    }
+    .page-footer__social {
+        margin-left: 80px;
+    }
+}

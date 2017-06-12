@@ -150,4 +150,224 @@
         bottom: 30px;
         right: 30px;
     }
+    .page-main__gallery-video {
+        margin-top: -12px;
+        padding-bottom: 0;
+        margin-bottom: 37px;
+    }
+    .page-main__video {
+        margin: 26px 0 0 0;
+        & img {
+            width: 648px;
+            height: 500px;
+        }
+    }
+    .page-main__comment {
+        margin-top: 28px;
+        padding: 0 60px 0 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-main__block {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        &--name {
+            order: 2;
+            height: 365px;
+            width: 324px;
+            padding-left: 57px;
+        }
+        &--contacts {
+            order: 3;
+            height: 308px;
+            width: 648px;
+        }
+        &--impress {
+            order: 1;
+            height: 365px;
+            width: 324px;
+            padding-right: 51px;
+        }
+        &--visited {
+            order: 4;
+            height: 307px;
+            width: 648px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &--details {
+            order: 5;
+            height: 382px;
+            width: 648px;
+        }
+    }
+    .page-main__subtitle {
+        font-size: 21px;
+        &--big {   
+            width: 648px;
+        }
+    }
+    .page-main__list {
+        margin-top: -13px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-main__item {
+        display: flex;
+        flex-wrap: wrap;
+        &--simple {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .page-main__photo-item img {
+        width: 512px;
+        height: 256px;
+    }
+    .page-main__city {
+        flex-direction: row;
+        padding: 0;
+    }
+    .page-main__hotel {
+        padding: 0 156px 58px 156px;
+    }
+    .page-main__map iframe {
+        width: $width-tablet;
+        height: 350px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .page-main {
+        width: $width-page-desk;
+        margin: auto;
+        background-color: #fff;
+    }
+    .page-main__gallery {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-main__gallery-photo {
+        position: relative;
+        height: 267px;
+        margin: 0;
+        width: 400px;
+        &--first {
+            height: 400px;
+            margin-top: 23px;
+            width: 1200px;
+        }
+    }
+    .page-main__gallery-img {
+        & img {
+            width: 400px;
+            height: 267px;
+        }
+        &--first img {
+            width: 1200px;
+            height: 400px;
+        }
+    }
+    .page-main__gallery-info {
+        height: 80px;
+        margin-top: -83px;
+        background-color: #000;
+        opacity: 0.5;
+    }
+    .page-main__gallery-title,
+    .page-main__gallery-desc,
+    .page-main__gallery-likes {
+        color: #fff;
+    }
+    .page-main__gallery-title {
+        margin-top: 0;
+    }
+    .page-main__gallery-video {
+        min-height: 250px;
+        margin-top: -44px;
+        padding-bottom: 0;
+        margin-bottom: 37px;
+    }
+    .page-main__video {
+        margin: 24px 200px 0 200px;
+        & img {
+            width: 800px;
+            height: 500px;
+        }
+    }
+    .page-main__list {
+        margin-top: -13px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-main__item {
+        display: flex;
+        flex-wrap: wrap;
+        &--simple {
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            height: 256px;
+        }
+    }
+    .page-main__photo-item img {
+        width: 800px;
+        height: 256px;
+    }
+    .page-main__hotel {
+        padding: 0 370px 64px 370px;
+    }
+    .page-main__map iframe {
+        width: $width-page-desk;
+        height: 350px;
+    }
+    .page-main__comment {
+        margin-top: 10px;
+        padding: 0 120px 0 120px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-main__block {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        &--name {
+            order: 2;
+            height: 365px;
+            width: 480px;
+            padding-left: 57px;
+        }
+        &--contacts {
+            order: 3;
+            height: 210px;
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &--impress {
+            order: 1;
+            height: 365px;
+            width: 480px;
+            padding-right: 51px;
+        }
+        &--visited {
+            order: 4;
+            height: 217px;
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &--details {
+            order: 5;
+            height: 386px;
+            width: 960px;
+        }
+    }
+    .page-main__subtitle {
+        &--big {   
+            width: 960px;
+        }
+    }
 }

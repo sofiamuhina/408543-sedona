@@ -30,3 +30,27 @@
 .btn_text {
     @include visually-hidden;
 }
+
+@media (min-width: 768px) {
+    .btn {
+        &--form {
+            width: 324px;
+            margin: 95px 0 10px 0;
+        }
+        &--hotel {
+            width: 458px;
+            margin: 0 0 2px 0;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .btn {
+        &--hotel {
+            margin: 4px 0 2px 0;
+        }
+        &--form {
+            width: 480px;
+        }
+    }
+}
