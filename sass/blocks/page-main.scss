@@ -1,10 +1,12 @@
 .page-main {
     width: $width-mobile;
+    margin: auto;
 }
 
 .page-main__list {
     @include style-list;
     margin-top: 17px;
+    margin-bottom: 9px;
 }
 
 .page-main__item {
@@ -13,10 +15,12 @@
         background-color: #fff;
     }
     &--simple {
-        min-height: 145px;
+        min-height: 153px;
         box-sizing: border-box;
-        padding: 22px 20px 8px 20px;
-        margin-bottom: 8px;
+        padding: 22px 20px 15px 20px;
+    }
+    &--bridge {
+        background-color: #eeeeee;
     }
 }
 
@@ -195,6 +199,7 @@
             width: 648px;
             display: flex;
             flex-wrap: wrap;
+            padding: 0 65px 0 65px;
         }
         &--details {
             order: 5;
@@ -212,6 +217,7 @@
         margin-top: -13px;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 16px;
     }
     .page-main__item {
         display: flex;
@@ -345,6 +351,7 @@
             width: 960px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
         &--impress {
             order: 1;
@@ -358,6 +365,7 @@
             width: 960px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
         &--details {
             order: 5;

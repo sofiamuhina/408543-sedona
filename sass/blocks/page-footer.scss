@@ -4,6 +4,8 @@
     height: 236px;
     box-sizing: border-box;
     width: $width-mobile;
+    margin: auto;
+    background-color: #fff;
     &--photo {
         padding: 74px 0 23px 0;
         height: 282px;
@@ -40,12 +42,12 @@
         align-items: center;
         width: $width-tablet;
         height: 120px;
-        margin: 42px 0 0 0;
+        margin-top: 42px;
         &--index {
-            margin: -9px 0 0 0;
+            margin-top: -9px;
         }
         &--photo {
-            margin: 0;
+            margin-top: 0;
         }
     }
     .page-footer__hashtag {
@@ -59,18 +61,18 @@
         margin-right: 100px;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .page-footer {
         width: $width-page-desk;
         &--photo {
-            margin: 42px 0 0 0;
+            margin-top: 42px;
         }
     }
     .page-footer__hashtag {
-        margin-left: 170px;
+        margin-left: 130px;
     }
     .page-footer__copyright {
-        margin-right: 40px;
+        margin-right: 82px;
     }
     .page-footer__social {
         margin-left: 80px;
