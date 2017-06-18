@@ -1,3 +1,10 @@
 body {
     margin: 0;
 }
+@media (min-width: 1280px) {
+    body{
+        width: $width-desktop;
+        background-color: #f2f2f2;
+        margin: auto;
+    }
+}

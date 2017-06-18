@@ -18,7 +18,7 @@
     }
     &--form {
         display: inline-block;
-        margin: 47px 0 20px 0;
+        margin: 145px 0 20px 0;
         font-size: 21px;
         padding: 16px 0;
         height: 58px;
@@ -29,4 +29,29 @@
 
 .btn_text {
     @include visually-hidden;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        &--form {
+            width: 324px;
+            margin: 197px 0 10px 0;
+        }
+        &--hotel {
+            width: 458px;
+            margin: 0 0 2px 0;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .btn {
+        &--hotel {
+            margin: 4px 0 2px 0;
+        }
+        &--form {
+            width: 480px;
+            margin: 195px 0 0 0;
+        }
+    }
 }

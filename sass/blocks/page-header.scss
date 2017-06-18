@@ -3,6 +3,7 @@
     width: $width-mobile;
     background-color: #fff;
     position: relative;
+    margin: auto;
     &--index {
         height: 668px;
     }
@@ -58,6 +59,28 @@
         & img {
             width: $width-tablet;
             height: 290px;
+        }
+        &--index img {
+            height: 518px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .page-header {
+        background-color: #fff;
+        width: $width-page-desk;
+        margin: auto;
+        height: 357px;
+        &--index {
+            height: 574px;
+        }
+    }
+    .page-header__image {
+        margin-top: 0;
+        & img {
+            width: $width-page-desk;
+            height: 302px;
         }
         &--index img {
             height: 518px;

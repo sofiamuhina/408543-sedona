@@ -12,10 +12,10 @@
           <h1 class="page-header__title">Welcome to the gorgeous Sedona</h1> <!--наверное будет скрыто-->
           <nav class="main-nav">
               <ul class="main-nav__list">
-                  <li class="main-nav__item">Главная</li>
-                  <li class="main-nav__item">Фото и видео</li>
-                  <li class="main-nav__item">Форма отзыва</li>
-                  <li class="main-nav__item">HTML Academy</li>
+                  <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                  <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+                  <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+                  <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
               </ul>
           </nav>
           <div class="page-header__logo">
@@ -34,22 +34,22 @@
               <div class="page-main__block page-main__block--name">
                   <span class="page-main__subtitle">Представьтесь:</span>
                   <div class="input-wrapper">
-                      <label class="input-wrapper__text" for="text1">Имя*:</label>
-                      <input class="input-wrapper__input" id="text1" type="text" placeholder="Петр">
+                      <label class="input-wrapper__text input-wrapper__text--name" for="text1">Имя*:</label>
+                      <input class="input-wrapper__input input-wrapper__input--name" id="text1" type="text" placeholder="Петр">
                   </div>
                   <div class="input-wrapper">
-                      <label class="input-wrapper__text" for="text2">Фамилия*:</label>
-                      <input class="input-wrapper__input" id="text2" type="text" placeholder="Иванов">
+                      <label class="input-wrapper__text input-wrapper__text--name" for="text2">Фамилия*:</label>
+                      <input class="input-wrapper__input input-wrapper__input--name" id="text2" type="text" placeholder="Иванов">
                   </div>
                   <div class="input-wrapper">
-                      <label class="input-wrapper__text" for="text3">Отчество:</label>
-                      <input class="input-wrapper__input" id="text3" type="text" placeholder="Александрович">
+                      <label class="input-wrapper__text input-wrapper__text--name" for="text3">Отчество:</label>
+                      <input class="input-wrapper__input input-wrapper__input--name" id="text3" type="text" placeholder="Александрович">
                   </div>
               </div>
               <div class="page-main__block page-main__block--contacts">
-                  <span class="page-main__subtitle">Контактная информация:</span>
+                  <span class="page-main__subtitle page-main__subtitle--big">Контактная информация:</span>
                   <div class="input-wrapper input-wrapper--contacts">
-                      <label class="input-wrapper__text input--wrapper__text--contacts" for="text4">Контактный телефон*:</label>
+                      <label class="input-wrapper__text input-wrapper__text--contacts" for="text4"><span class="input-wrapper__contact-phone">Контактный </span>телефон*:</label>
                       <input class="input-wrapper__input input-wrapper__input--contacts" id="text4" type="text" placeholder="Введите телефон">
                   </div>
                   <div class="input-wrapper input-wrapper--contacts">
@@ -61,38 +61,45 @@
                   <span class="page-main__subtitle">Ваше Общее впечатление:</span>
                   <div class="input-wrapper input-wrapper--radio">
                       <input class="input-wrapper__input input-wrapper__input--radio" id="radio1" type="radio" name="impress">
+                      <span class="input-wrapper__indicator input-wrapper__indicator--radio"></span>
                       <label class="input-wrapper__radio" for="radio1">Скорее положительное</label>
                   </div>
                   <div class="input-wrapper input-wrapper--radio">
                       <input class="input-wrapper__input input-wrapper__input--radio" id="radio2" type="radio" name="impress">
+                      <span class="input-wrapper__indicator input-wrapper__indicator--radio"></span>
                       <label class="input-wrapper__radio" for="radio2">Скорее отрицательное</label>
                   </div>
                   <div class="input-wrapper input-wrapper--radio">
                       <input class="input-wrapper__input input-wrapper__input--radio" id="radio3" type="radio" name="impress">
+                      <span class="input-wrapper__indicator input-wrapper__indicator--radio"></span>
                       <label class="input-wrapper__radio" for="radio3">Затрудняюсь ответить</label>
                   </div>
               </div>
               <div class="page-main__block page-main__block--visited">
-                  <span class="page-main__subtitle">Посещенные достопримечательности:</span>
+                  <span class="page-main__subtitle page-main__subtitle--big">Посещенные достопримечательности:</span>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check1" type="checkbox">
+                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
                       <label class="input-wrapper__checkbox" for="check1">Мост Дьявола</label>
                   </div>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check2" type="checkbox">
+                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
                       <label class="input-wrapper__checkbox" for="check2">Слайд-парк</label>
                   </div>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check3" type="checkbox">
+                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
                       <label class="input-wrapper__checkbox" for="check3">Гора-Колокол</label>
                   </div>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check4" type="checkbox">
+                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
                       <label class="input-wrapper__checkbox" for="check4">Красные скалы</label>
                   </div>
               </div>
               <div class="page-main__block page-main__block--details">
-                  <span class="page-main__subtitle">Опишите свои эмоции:</span>
+                  <span class="page-main__subtitle page-main__subtitle--big">Опишите свои эмоции:</span>
                   <div class="input-wrapper input-wrapper--textarea">
                       <textarea class="input-wrapper__input input-wrapper__input--textarea" rows="7" id="textarea1" placeholder="Опишите подробно все свои восторги"></textarea>
                       <label class="input-wrapper__textarea" for="textarea1"></label>

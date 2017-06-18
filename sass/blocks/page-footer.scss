@@ -4,6 +4,8 @@
     height: 236px;
     box-sizing: border-box;
     width: $width-mobile;
+    margin: auto;
+    background-color: #fff;
     &--photo {
         padding: 74px 0 23px 0;
         height: 282px;
@@ -31,4 +33,48 @@
     margin: auto;
     margin-top: 43px;
     @include text-light();
+}
+
+@media (min-width: 768px) {
+    .page-footer {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: $width-tablet;
+        height: 120px;
+        margin-top: 42px;
+        &--index {
+            margin-top: -9px;
+        }
+        &--photo {
+            margin-top: 0;
+        }
+    }
+    .page-footer__hashtag {
+        margin-left: 60px;
+    }
+    .page-footer__social {
+        margin-left: 52px;
+    }
+    .page-footer__copyright {
+        margin-top: 47px;
+        margin-right: 100px;
+    }
+}
+@media (min-width: 1280px) {
+    .page-footer {
+        width: $width-page-desk;
+        &--photo {
+            margin-top: 42px;
+        }
+    }
+    .page-footer__hashtag {
+        margin-left: 130px;
+    }
+    .page-footer__copyright {
+        margin-right: 82px;
+    }
+    .page-footer__social {
+        margin-left: 80px;
+    }
 }

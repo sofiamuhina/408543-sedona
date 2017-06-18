@@ -13,6 +13,10 @@
     text-align: center;
     padding: 16px 0 0 0;
     box-sizing: border-box;
+    & a {
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 .main-nav__list {
@@ -29,11 +33,23 @@
         background-color: #fff;
         color: #000;
         font-size: 14px;
+        & a {
+            color: #000;
+        }
     }
     .main-nav__item:nth-child(2) {
         margin-right: 150px;
     }
     .main-nav__list {
         display: flex;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main-nav__item:nth-child(2) {
+        margin-right: 242px;
+        & a {
+            color: #000;
+        }
     }
 }
