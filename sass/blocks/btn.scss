@@ -25,9 +25,22 @@
         box-sizing: border-box;
         width: 280px;
     }
+    &:hover {
+        background-color: #669ec0;
+    }
+    &:active {
+        background-color: #5496bd;
+    }
+    &:active .btn__text {
+        opacity: 0.3;
+    }
+    &--disabled {
+        background-color: #e5e5e5;
+        color: #fff;
+    }
 }
 
-.btn_text {
+.btn__social {
     @include visually-hidden;
 }
 
@@ -35,7 +48,7 @@
     .btn {
         &--form {
             width: 324px;
-            margin: 197px 0 10px 0;
+            margin: 185px 0 16px 0;
         }
         &--hotel {
             width: 458px;
@@ -51,7 +64,7 @@
         }
         &--form {
             width: 480px;
-            margin: 195px 0 0 0;
+            margin: 177px 0 18px 0;
         }
     }
 }

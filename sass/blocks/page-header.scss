@@ -43,6 +43,10 @@
     @include center(102px);
 }
 
+.page-header__open-menu {
+    position: absolute;
+}
+
 @media (min-width: 768px) {
     .page-header {
         width: $width-tablet;
@@ -63,6 +67,9 @@
         &--index img {
             height: 518px;
         }
+    }
+    .page-header__open-menu {
+        display: none;
     }
 }
 
