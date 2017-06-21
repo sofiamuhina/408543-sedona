@@ -316,7 +316,7 @@
     }
     .page-main__gallery-video {
         min-height: 250px;
-        margin-top: -44px;
+        margin-top: -40px;
         padding-bottom: 0;
         margin-bottom: 37px;
     }
@@ -354,7 +354,7 @@
         height: 350px;
     }
     .page-main__comment {
-        margin-top: 10px;
+        margin-top: 12px;
         padding: 0 120px 0 120px;
         display: flex;
         flex-wrap: wrap;
@@ -387,7 +387,6 @@
             order: 4;
             height: 217px;
             width: 960px;
-            display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
@@ -399,6 +398,9 @@
     }
     .page-main__subtitle {
         &--big {
+            display: block;
+            text-align: center;
+            margin: 0 280px 0 280px;
             width: 960px;
         }
     }
