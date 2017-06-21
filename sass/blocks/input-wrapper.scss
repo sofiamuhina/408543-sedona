@@ -113,6 +113,9 @@
             margin-top: 16px;
             margin-bottom: 22px;
         }
+        &--textarea {
+            width: 648px;
+        }
     }
 }
 
@@ -136,6 +139,9 @@
             padding: 0;
             margin-top: 16px;
             margin-bottom: 22px;
+        }
+        &--textarea {
+            width: 960px;
         }
     }
     .input-wrapper__contact-phone {
