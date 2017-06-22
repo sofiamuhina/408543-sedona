@@ -11,6 +11,7 @@
       <header class="page-header page-header--index">
           <h1 class="page-header__title">Welcome to the gorgeous Sedona</h1> <!--наверное будет скрыто-->
           <nav class="main-nav">
+              <button class="main-nav__close" type="button" title="Закрыть меню"></button>
               <ul class="main-nav__list">
                   <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
                   <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
@@ -19,10 +20,15 @@
               </ul>
           </nav>
           <div class="page-header__logo">
+              <button class="page-header__open-menu" type="button" title="Открыть меню"></button>
               <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
           </div>
           <div class="page-header__image page-header__image--index">
-              <img src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="Седона">
+              <picture>
+                  <source media="(min-width: 1280px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+                  <img src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" width="320" height="389" alt="Седона">
+              </picture>
           </div>
       </header>
       <main class="page-main">
@@ -38,7 +44,11 @@
                           <p class="content-block__desc content-block__desc--advance"><span class="content-block__number">— №1 —</span>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
                       </div>
                       <div class="page-main__photo-item">
-                          <img src="img/photo-city.jpg" width="320" height="260" alt="Настоящий городок">
+                          <picture>
+                              <source media="(min-width: 1280px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+                              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                              <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок">
+                          </picture>
                       </div>
                       <ul class="page-main__city">
                           <li class="content-block content-block--list">
@@ -61,7 +71,11 @@
                           <p class="content-block__desc content-block__desc--advance"><span class="content-block__number">— №2 —</span>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                       </div>
                       <div class="page-main__photo-item">
-                          <img src="img/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола">
+                          <picture>
+                              <source media="(min-width: 1280px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+                              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
+                          </picture>
                       </div>
                   </li>
                   <li class="page-main__item page-main__item--simple">
@@ -92,7 +106,11 @@
               <a class="btn btn--hotel"><span class="btn__text">Найти гостиницу</span></a>
           </div>
           <div class="page-main__map">
-              <iframe  width="320" height="350"></iframe>
+              <picture>
+                  <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+                  <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта">
+              </picture>
           </div>
       </main>
       <footer class="page-footer page-footer--index">

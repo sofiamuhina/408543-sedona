@@ -7,11 +7,42 @@
         padding: 41px 20px 11px 20px;
     }
     &--list {
+        position: relative;
         min-height: 62px;
         margin-bottom: 15px;
         text-align: left;
         list-style: none;
         padding: 0;
+        &:nth-child(1)::before {
+            position: absolute;
+            content: "";
+            width: 75px;
+            height: 73px;
+            left: -67px;
+            top: -27px;
+            background: transparent url("../../img/icon-house.svg") no-repeat;
+            transform: scale(0.5);
+        }
+        &:nth-child(2)::before {
+            position: absolute;
+            content: "";
+            width: 75px;
+            height: 76px;
+            left: -64px;
+            top: -30px;
+            background: transparent url("../../img/icon-gift.svg") no-repeat;
+            transform: scale(0.5);
+        }
+        &:nth-child(3)::before {
+            position: absolute;
+            content: "";
+            width: 75px;
+            height: 73px;
+            left: -70px;
+            top: -23px;
+            background: transparent url("../../img/icon-burger.svg") no-repeat;
+            transform: scale(0.5);
+        }
     }
     &--advance {
         background-color: $color-btn;
@@ -89,6 +120,17 @@
             &:nth-child(2) {
                 order: 3;
             }
+            &:nth-child(1)::before,
+            &:nth-child(3)::before {
+                transform: scale(1);
+                top: 56px;
+                left: 90px;
+            }
+            &:nth-child(2)::before {
+                transform: scale(1);
+                top: 52px;
+                left: 93px;
+            }
         }
         &--bridge {
             order: 2;
@@ -152,6 +194,13 @@
             text-align: center;
             &:nth-child(2) {
                 order: 3;
+            }
+            &:nth-child(1)::before,
+            &:nth-child(3)::before {
+                left: 160px;
+            }
+            &:nth-child(2)::before {
+                left: 167px;
             }
         }
         &--simple {

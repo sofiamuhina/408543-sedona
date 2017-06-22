@@ -36,7 +36,22 @@
 }
 
 .main-nav__close {
+    background: transparent;
+    border: none;
     position: absolute;
+    width: 23px;
+    height: 23px;
+    right: 20px;
+    top: 17px;
+    &::before {
+        background: transparent url(../../img/icon-cross.svg) no-repeat;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -79,9 +94,9 @@
             color: #766357;
             opacity: 0.3;
         }
-    }
-    .main-nav__item:nth-child(2) {
-        margin-right: 150px;
+        &:nth-child(2) {
+              margin-right: 150px;  
+        }
     }
     .main-nav__list {
         display: flex;
@@ -94,8 +109,5 @@
 @media (min-width: 1280px) {
     .main-nav__item:nth-child(2) {
         margin-right: 242px;
-        & a {
-            color: #000;
-        }
     }
 }

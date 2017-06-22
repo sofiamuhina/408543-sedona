@@ -33,6 +33,18 @@
     margin: auto;
     margin-top: 43px;
     @include text-light();
+    position: relative;
+    left: -15px;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        right: -50px;
+        top: -18px;
+        transform: scale(0.7);
+        background: transparent url(../../img/htmlacademy.svg) no-repeat;
+    }
 }
 
 @media (min-width: 768px) {
@@ -44,7 +56,7 @@
         height: 120px;
         margin-top: 42px;
         &--index {
-            margin-top: -9px;
+            margin-top: -6px;
         }
         &--photo {
             margin-top: 0;
@@ -54,11 +66,11 @@
         margin-left: 60px;
     }
     .page-footer__social {
-        margin-left: 52px;
+        margin-left: 45px;
     }
     .page-footer__copyright {
         margin-top: 47px;
-        margin-right: 100px;
+        margin-right: 80px;
     }
 }
 @media (min-width: 1280px) {
@@ -72,9 +84,9 @@
         margin-left: 130px;
     }
     .page-footer__copyright {
-        margin-right: 82px;
+        margin-right: 65px;
     }
     .page-footer__social {
-        margin-left: 80px;
+        margin-left: 75px;
     }
 }
