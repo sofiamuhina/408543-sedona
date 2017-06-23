@@ -33,6 +33,7 @@
 
 .main-nav__list {
     @include style-list;
+    margin: 0;
 }
 
 .main-nav__close {
@@ -44,7 +45,7 @@
     right: 20px;
     top: 17px;
     &::before {
-        background: transparent url(../../img/icon-cross.svg) no-repeat;
+        background: transparent url(../img/icon-cross.svg) no-repeat;
         width: 23px;
         height: 23px;
         position: absolute;

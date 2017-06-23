@@ -17,7 +17,7 @@
     position: relative;
     margin-top: 56px;
     height: 158px;
-    width: $width-mobile;
+    width: 318px;
     overflow: hidden;
     & img {
         width: auto;
@@ -30,14 +30,15 @@
         margin-top: -104px;
         height: 351px;
         transform: scale(0.5);
-        background: transparent url(../../img/text-sedona-index-form.svg) no-repeat;
+        background: transparent url(../img/text-sedona-index-form.svg) no-repeat;
     }
     &:after {
         position: absolute;
         content: "";
         width: $width-mobile;
         height: 27px;
-        background: transparent url(../../img/bg-intro-triangle-mobile.svg) no-repeat;
+        left: -1px;
+        background: transparent url(../img/bg-intro-triangle-mobile.svg) no-repeat;
     }
     &--index {
         height: 389px;
@@ -53,7 +54,7 @@
             margin-top: 22px;
             height: 351px;
             transform: scale(0.62);
-            background: transparent url(../../img/text-sedona-index.svg) no-repeat;
+            background: transparent url(../img/text-sedona-index.svg) no-repeat;
         }
     }
 }
@@ -65,6 +66,11 @@
     @include center(102px);
 }
 
+.page-header__wrapper-image {
+    margin-top: -30px;
+    width: 320px;
+}
+
 .page-header__open-menu {
     background: transparent;
     border: none;
@@ -74,7 +80,7 @@
     top: 17px;
     left: 169px;
     &::before {
-        background: transparent url(../../img/icon-menu.svg) no-repeat;
+        background: transparent url(../img/icon-menu.svg) no-repeat;
         width: 23px;
         height: 22px;
         position: absolute;
@@ -112,6 +118,12 @@
             transform: scale(1);
             margin-top: -43px;
         }
+        &:after {
+            width: 768px;
+            height: 57px;
+            left: 0;
+            background: transparent url(../img/bg-intro-triangle-tablet.svg) no-repeat;
+        }
         &--index {
             height: 518px;
             & img {
@@ -123,6 +135,9 @@
                 margin-top: 77px;
             }
         }
+    }
+    .page-header__wrapper-image {
+        margin-top: -61px;
     }
     .page-header__open-menu {
         display: none;
@@ -139,6 +154,9 @@
             height: 574px;
         }
     }
+    .page-header__logo {
+        margin-left: -94px;
+    }
     .page-header__image {
         width: $width-page-desk;
         height: 302px;
@@ -152,6 +170,11 @@
         &::before {
             transform: scale(1);
             margin-top: -35px;
+        }
+        &:after {
+            width: 1200px;
+            height: 57px;
+            background: transparent url(../img/bg-intro-triangle-desktop.svg) no-repeat;
         }
         &--index {
             height: 518px;

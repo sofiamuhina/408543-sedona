@@ -21,7 +21,11 @@
           </nav>
           <div class="page-header__logo">
               <button class="page-header__open-menu" type="button" title="Открыть меню"></button>
-              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
+              <picture>
+                  <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg"  alt="Логотип">
+              </picture>
           </div>
           <div class="page-header__image">
               <picture>
@@ -29,6 +33,7 @@
                   <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
                   <img src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" width="320" height="389" alt="Седона">
               </picture>
+              <div class="page-header__wrapper-image"></div>
           </div>
       </header>
       <main class="page-main">
@@ -54,11 +59,11 @@
               </div>
               <div class="page-main__block page-main__block--contacts">
                   <span class="page-main__subtitle page-main__subtitle--big">Контактная информация:</span>
-                  <div class="input-wrapper input-wrapper--contacts">
+                  <div class="input-wrapper input-wrapper--contacts input-wrapper--phone">
                       <label class="input-wrapper__text input-wrapper__text--contacts" for="text4"><span class="input-wrapper__contact-phone">Контактный </span>телефон*:</label>
                       <input class="input-wrapper__input input-wrapper__input--contacts" id="text4" type="text" placeholder="Введите телефон">
                   </div>
-                  <div class="input-wrapper input-wrapper--contacts">
+                  <div class="input-wrapper input-wrapper--contacts input-wrapper--mail">
                       <label class="input-wrapper__text input-wrapper__text--contacts" for="text5">Электронная почта*:</label>
                       <input class="input-wrapper__input input-wrapper__input--contacts" id="text5" type="text" placeholder="Введите e-mail">
                   </div>
@@ -85,30 +90,30 @@
                   <span class="page-main__subtitle page-main__subtitle--big">Посещенные достопримечательности:</span>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check1" type="checkbox">
-                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
+                      <label class="input-wrapper__indicator input-wrapper__indicator--checkbox" for="check1"></label>
                       <label class="input-wrapper__checkbox" for="check1">Мост Дьявола</label>
                   </div>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check2" type="checkbox">
-                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
+                      <label class="input-wrapper__indicator input-wrapper__indicator--checkbox" for="check2"></label>
                       <label class="input-wrapper__checkbox" for="check2">Слайд-парк</label>
                   </div>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check3" type="checkbox">
-                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
+                      <label class="input-wrapper__indicator input-wrapper__indicator--checkbox" for="check3"></label>
                       <label class="input-wrapper__checkbox" for="check3">Гора-Колокол</label>
                   </div>
                   <div class="input-wrapper input-wrapper--checkbox">
                       <input class="input-wrapper__input input-wrapper__input--checkbox" id="check4" type="checkbox">
-                      <div class="input-wrapper__indicator input-wrapper__indicator-checkbox"></div>
+                      <label class="input-wrapper__indicator input-wrapper__indicator--checkbox" for="check4"></label>
                       <label class="input-wrapper__checkbox" for="check4">Красные скалы</label>
                   </div>
               </div>
               <div class="page-main__block page-main__block--details">
                   <span class="page-main__subtitle page-main__subtitle--big">Опишите свои эмоции:</span>
                   <div class="input-wrapper input-wrapper--textarea">
-                      <textarea class="input-wrapper__input input-wrapper__input--textarea" rows="7" id="textarea1" placeholder="Опишите подробно все свои восторги"></textarea>
-                      <label class="input-wrapper__textarea" for="textarea1"></label>
+                      <textarea class="input-wrapper__input input-wrapper__input--textarea" rows="7" id="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+                      <label class="input-wrapper__textarea" for="textarea"></label>
                   </div>
                   <button class="btn btn--form" type="submit"><span class="btn__text">Отправить отзыв</span></button>
                   <span class="page-main__sup">* — обязательные поля</span>

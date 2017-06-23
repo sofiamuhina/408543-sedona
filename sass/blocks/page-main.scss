@@ -112,6 +112,17 @@
     line-height: 24px;
     display: block;
     margin-top: 10px;
+    position: relative;
+    margin-left: 30px;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 20px;
+        left: -28px;
+        opacity: 0.3;
+        background: transparent url(../img/icon-like.svg) no-repeat;
+    }
 }
 
 .page-main__gallery-video {
@@ -126,6 +137,95 @@
 .page-main__video {
     margin-top: 7px;
     margin-left: -20px;
+}
+
+.page-main__video-settings {
+    height: 111px;
+    width: 280px;
+    margin-top: -49px;
+}
+
+.page-main__video-range {
+    display: none;
+}
+
+.page-main__indicator-range {
+    height: 45px;
+    background-color: #000;
+    opacity: 0.6;
+    position: relative;
+}
+
+.page-main__indicator-track {
+    position: absolute;
+    height: 3px;
+    width: 235px;
+    top: 22px;
+    left: 22px;
+    background-color: #fff;
+    opacity: 0.2;
+}
+
+.page-main__indicator-thumb {
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    top: 19px;
+    left: 58px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.page-main__video-buttons {
+    height: 66px;
+    background-color: #f2f2f2;
+}
+.page-main__video-replay {
+    border: none;
+    width: 16px;
+    height: 20px;
+    margin-top: 22px;
+    margin-left: 25px;
+    background: transparent url(../img/icon-video-replay.svg) no-repeat;
+    opacity: 0.7;
+}
+
+.page-main__video-subtitles {
+    border: none;
+    width: 32px;
+    height: 20px;
+    margin-top: 22px;
+    margin-right: 27px;
+    margin-left: 130px;
+    background: transparent url(../img/icon-video-subtitles.svg) no-repeat;
+    opacity: 0.8;
+}
+
+.page-main__video-fullscreen {
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-top: 22px;
+    background: transparent url(../img/icon-video-fullscreen.svg) no-repeat;
+    opacity: 0.8;
+}
+
+.page-main__video-replay:hover,
+.page-main__video-subtitles:hover,
+.page-main__video-fullscreen:hover {
+    opacity: 1;
+}
+
+.page-main__video-replay:active,
+.page-main__video-subtitles:active,
+.page-main__video-fullscreen:active {
+    opacity: 0.3;
+}
+
+.page-main__video-replay:focus,
+.page-main__video-subtitles:focus,
+.page-main__video-fullscreen:focus {
+    outline: none;
 }
 
 .page-main__sup {
@@ -166,7 +266,15 @@
             height: 400px;
         }
     }
-    .page-main__gallery-title,
+    .page-main__gallery-info {
+        margin-top: -4px;
+        height: 81px;
+        background-color: #f2f2f2;
+    }
+    .page-main__gallery-title {
+        margin-left: 20px;
+        margin-top: 14px;
+    }
     .page-main__gallery-desc {
         margin-left: 20px;
     }
@@ -186,6 +294,38 @@
             width: 648px;
             height: 500px;
         }
+    }
+    .page-main__video-settings {
+        height: 92px;
+        width: 648px;
+        margin-top: -95px;
+    }
+    .page-main__indicator-range {
+        height: 92px;
+    }
+    .page-main__indicator-track {
+        width: 388px;
+        top: 45px;
+        left: 93px;
+    }
+    .page-main__indicator-thumb {
+        top: 42px;
+        left: 206px;
+    }
+    .page-main__video-buttons {
+        background: transparent;
+        margin-top: -80px;
+    }
+    .page-main__video-replay {
+        margin-left: 35px;
+        filter: invert(100%);
+    }
+    .page-main__video-subtitles {
+        margin-left: 468px;
+        filter: invert(100%);
+    }
+    .page-main__video-fullscreen {
+        filter: invert(100%);
     }
     .page-main__comment {
         margin-top: 28px;
@@ -325,6 +465,10 @@
     .page-main__gallery-likes {
         color: #fff;
     }
+    .page-main__gallery-likes:before {
+        background: url(../img/icon-like-white.svg);
+        opacity: 1;
+    }
     .page-main__gallery-title {
         margin-top: 14px;
     }
@@ -340,6 +484,17 @@
             width: 800px;
             height: 500px;
         }
+    }
+    .page-main__video-settings {
+        margin-left: 200px;
+        width: 800px;
+        margin-top: -97px;
+    }
+    .page-main__indicator-track {
+        width: 540px;
+    }
+    .page-main__video-subtitles {
+        margin-left: 620px;
     }
     .page-main__list {
         margin-top: -13px;

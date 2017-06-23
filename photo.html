@@ -21,7 +21,11 @@
           </nav>
           <div class="page-header__logo">
               <button class="page-header__open-menu" type="button" title="Открыть меню"></button>
-              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
+              <picture>
+                  <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg"  alt="Логотип">
+              </picture>
           </div>
           <div class="page-header__image">
               <picture>
@@ -29,6 +33,7 @@
                   <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
                   <img src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" width="320" height="389" alt="Седона">
               </picture>
+              <div class="page-header__wrapper-image"></div>
           </div>
       </header>
       <main class="page-main">
@@ -104,6 +109,18 @@
                           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                           <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео">
                       </picture>
+                  </div>
+                  <div class="page-main__video-settings">
+                      <input class="page-main__video-range" id="range" type=range>
+                      <div class="page-main__indicator-range" for="range">
+                          <div class="page-main__indicator-track"></div>
+                          <div class="page-main__indicator-thumb"></div>
+                      </div>
+                      <div class="page-main__video-buttons">
+                          <button class="page-main__video-replay"></button>
+                          <button class="page-main__video-subtitles"></button>
+                          <button class="page-main__video-fullscreen"></button>
+                      </div>
                   </div>
               </div>
           </div>

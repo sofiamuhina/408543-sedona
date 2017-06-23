@@ -20,7 +20,7 @@
             height: 73px;
             left: -67px;
             top: -27px;
-            background: transparent url("../../img/icon-house.svg") no-repeat;
+            background: transparent url("../img/icon-house.svg") no-repeat;
             transform: scale(0.5);
         }
         &:nth-child(2)::before {
@@ -30,7 +30,7 @@
             height: 76px;
             left: -64px;
             top: -30px;
-            background: transparent url("../../img/icon-gift.svg") no-repeat;
+            background: transparent url("../img/icon-gift.svg") no-repeat;
             transform: scale(0.5);
         }
         &:nth-child(3)::before {
@@ -40,7 +40,7 @@
             height: 73px;
             left: -70px;
             top: -23px;
-            background: transparent url("../../img/icon-burger.svg") no-repeat;
+            background: transparent url("../img/icon-burger.svg") no-repeat;
             transform: scale(0.5);
         }
     }
@@ -97,6 +97,9 @@
 .content-block__number {
     position: absolute;
     top: -36px;
+    @include text-bold();
+    font-size: 14px;
+    color: #fff;
     @include center(60px);
 }
 
