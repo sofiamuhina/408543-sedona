@@ -29,7 +29,7 @@
         top: 34px;
         background: #e6e6e6 url(../img/icon-mail.svg) no-repeat;
         background-position: 20px 20px;
-    } 
+    }
     &--radio {
         height: 56px;
         margin-top: 22px;
@@ -53,8 +53,8 @@
 }
 
 .input-wrapper__text::-webkit-input-placeholder,
-.input-wrapper__text::-moz-placeholder, 
-.input-wrapper__text:-moz-placeholder, 
+.input-wrapper__text::-moz-placeholder,
+.input-wrapper__text:-moz-placeholder,
 .input-wrapper__text:-ms-input-placeholder {
     color: #000;
 }
@@ -222,7 +222,7 @@
         }
         &--mail:before {
             top: 0;
-        }   
+        }
         &--checkbox {
             width: auto;
             padding: 0;
