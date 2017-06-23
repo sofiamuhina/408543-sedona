@@ -54,6 +54,14 @@
     &--hotel {
         padding: 0;
     }
+    &--success {
+        padding: 44px 50px 38px 50px;
+        background-color: #fff;
+    }
+    &--fail {
+        background-color: #fff;
+        padding: 44px 55px 36px 55px;
+    }
 }
 
 .content-block__title {
@@ -101,6 +109,9 @@
     font-size: 14px;
     color: #fff;
     @include center(60px);
+    &--simple {
+        color: #000;
+    }
 }
 
 @media (min-width: 768px) {
@@ -147,6 +158,9 @@
         &--hotel {
             min-height: 130px;
             padding: 38px 0 28px 0;
+        }
+        &--fail {
+            padding: 44px 55px 36px 55px;
         }
     }
     .content-block__title {
@@ -215,6 +229,12 @@
         &--hotel {
             min-height: 130px;
             padding: 38px 0 28px 0;
+        }
+        &--success {
+            padding: 44px 50px 38px 50px;
+        }
+        &--fail {
+            padding: 44px 55px 36px 55px;
         }
     }
     .content-block__title {

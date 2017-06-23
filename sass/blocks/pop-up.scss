@@ -1,0 +1,36 @@
+.pop-up {
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top: 200px;
+    display: none;
+    &--fail {
+        margin-left: -160px;
+        width: 320px;
+        height: 282px;
+        background-color: #fff;
+    }
+    &--success {
+        margin-left: -160px;
+        width: 320px;
+        height: 325px;
+        background-color: #f2f2f2;
+    }
+}
+
+@media (min-width: 768px) {
+    .pop-up {
+        &--fail {
+            margin-left: -200px;
+            width: 400px;
+            height: 342px;
+        }
+        &--success {
+            margin-left: -320px;
+            width: 640px;
+            height: 348px;
+        }
+    }
+}
+@media (min-width: 1280px) {
+}
